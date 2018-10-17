@@ -4,7 +4,7 @@ main:
     url: /publications/
 
   - title: "Code"
-    url: /code/    
+    url: https://github.com/MadScientistAssociation
 
   - title: "Talks"
     url: /talks/  
