@@ -1,15 +1,13 @@
 ---
-title: "Paper Title Number 1"
+title: "Microsoft Office Telemetry Log (TBL) Format"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/Microsoft-Office-Telemetry-Log-TBL-Format.pdf
+excerpt: 'The Microsoft Office telemetry agent collects data from various Microsoft Office applications,  including user name, computer name, filename, document title and author, and last loaded date. This information is valuable for forensic examiners.'
+date: 2018-10-16
+
+paperurl: 'http://madscientistassociation.github.io/files/Microsoft-Office-Telemetry-Log-TBL-Format.pdf'
+
 ---
-This paper is about the number 1. The number 2 is left for future work.
+The Microsoft Office telemetry agent collects data from various Microsoft Office applications,  including user name, computer name, filename, document title and author, and last loaded date. This information is valuable for forensic examiners.
+[Download paper here](http://madscientistassociation.github.io/files/Microsoft-Office-Telemetry-Log-TBL-Format.pdf)
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
-
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
