@@ -16,6 +16,10 @@ Our areas of focus include:
 
 All projects and publications are distributed with open-source licenses.
 
+Current Areas of Focus
+======
+* Microsoft Office telemetry
+* Artifact recovery from pagefile
 
 Contact Us
 ======
