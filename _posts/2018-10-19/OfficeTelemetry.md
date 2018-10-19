@@ -99,3 +99,28 @@ My initial idea for using Office telemetry data was to add to a forensic timelin
 Even better than the single-user use case, let's say we are tasked with forensic examination of machines across an enterprise, like in the original scenario posed in this post. If the enterprise is using Office telemetry and pushing the results to a SQL server (*-fingers crossed-*), we can get **tons** of data without even looking at the workstations. Just grab the database!
 
 Even even better: the database does not automatically remove entries for computers that don't exist on the network anymore. So as machines are cycled on and off the network, telemetry information will persist. An organization's telemetry database could contain activity for users and computers that haven't been active in years! It is important to note that there is a telemetry database admin tool (tdadm), that can purge old records. So your results may vary based on the frugality of the organization's sysadmin.
+
+![Slide 13](MSOT-Slide-13.jpg  "Slide 13")
+
+We've established that telemetry data stored on a SQL server is extremely useful for investigators. How about when that data is stored in the cloud rather than on-premises? All three of the major cloud providers offer easy ways to get an MSSQL server up and running. This offers a method for investigators to recover detailed information about user activity on an organization's network without even stepping foot on the premises!
+
+![Slide 14](MSOT-Slide-14.jpg  "Slide 14")
+
+Finally, we considered the usefulness of Office telemetry data in an incident response context. An easy scenario to envision involves a user opening a malicious Office document. That document **hopefully** generates a security alert, and an incident response team is deployed to investigate. One of their first considerations will be how many users within the organization received and opened the same malicious document. Office telemetry data could provide an extremely fast way to determine the scope of the problem by simple searching the document name in the database.
+
+We also had the idea that malicious macros or dynamic data exchange calls within Office documents may trigger some sort of telemetry log entries. Unfortunately, even though the testing process was fun, we were unable to generate any alerts. Macros and DDE's aren't recorded by telemetry. However, Microsoft recently started testing a feature allowing users to run custom Javascript functions from within Office documents. What could go wrong? It's unclear what, if any, effect this may have on telemetry logging, but there are certainly scenarios where malicious functions could be detected. Consider [this article](https://charles.dardaman.com/js_coinhive_in_excel) by Charles Dardaman. Imagine that an ambitious employee decides they are going to use their work computer to mine cryptocurrency. They don't have administrator rights, so installing mining software is out of the question. But they do have Excel installed, and there's a readily available Javascript function that allows that user to interact with Coinhive! 
+
+One of the telemetry event functions is to alert when an Office application uses more than 90% of the CPU. Presumably this was added to watch for some add-in/application interaction that is not working properly. But conversely, if the Coinhive Javascript function is working well, it should attempt to utilize as many CPU cycles as possible (*and hopefully trigger this telemetry alert*).
+
+![Slide 15](MSOT-Slide-15.jpg  "Slide 15")
+
+Conclusion
+------
+
+There's certainly more work to be done in this area. Hopefully simple awareness will motivate more administrators to enable Office telemetry, and that will open up more possibilities for forensic investigators and incident responders. We plan on continuing research on artifacts contained within the telemetry logs, as well as what new features Office 365 might hold.
+
+![Slide 16](MSOT-Slide-16.jpg  "Slide 16")
+
+Finally, we are always looking for contributers! The open-source community is the backbone of the digital forensics field. Every new artifact and discovery that is published could be the key to solving an investigation. Pull requests are always welcome!
+
+![Slide 17](MSOT-Slide-17.jpg  "Slide 17")
