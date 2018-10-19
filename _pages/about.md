@@ -23,7 +23,7 @@ Current Areas of Focus
 
 Newest Posts
 ======
-
+* 2018-10-19: [Microsoft Office Telemetry: Tracking Your Every Move](https://madscientistassociation.github.io//posts/2018/10/19/OfficeTelemetry/). *Learn about the treasure trove of information that Office Telemetry makes available to forensic examiners and incident responders.*
 
 Contact Us
 ======
