@@ -1,7 +1,7 @@
 ---
 title: 'Microsoft Office Telemetry: Tracking Your Every Move'
 date: 2018-10-19
-permalink: /posts/2018-10-19-OfficeTelemetry.md
+permalink: /posts/2018/10/19/OfficeTelemetry/
 tags:
   - Forensics
 ---
