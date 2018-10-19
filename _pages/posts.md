@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "Posts"
-permalink: /publications/
+permalink: /posts/
 author_profile: true
 ---
 
