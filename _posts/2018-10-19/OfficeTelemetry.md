@@ -7,13 +7,15 @@ tags:
   - Telemetry
 ---
 
-This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
-
-Headings are cool
+Microsoft Office Telemetry: Tracking Your Every Move
 ======
 
-You can have many headings
-======
+Thanks to everyone for the great feedback from my presentation at OSDFCon! I've had a few requests for copies of the slides, and after taking a second look, I realized the slides are quite unhelpful without my yammering narration. Hopefully this post will provide both the slides and the context.
+
+![Slide 1](https://madscientistassociation.github.io/_posts/2018-10-19/MSOT-Slide-1.jpg  "Slide 1")
+
 
 Aren't headings cool?
 ------
+
+
