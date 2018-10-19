@@ -95,7 +95,7 @@ Use Cases
 
 My initial idea for using Office telemetry data was to add to a forensic timeline. The telemetry log contains data that is either unavailable elsewhere, or requires a lot more work to reconstruct. Using the telemetry data, it's amazingly easy to show when a user opened Microsoft Word, opened their smoking-gun document, closed the document, and quit the application. Fantastic evidence if you can get it, assuming that the user happens to have telemetry enabled on their system.
 
-![Slide 12](M2018-10-19/SOT-Slide-12.jpg  "Slide 12")
+![Slide 12](2018-10-19/MSOT-Slide-12.jpg  "Slide 12")
 
 Even better than the single-user use case, let's say we are tasked with forensic examination of machines across an enterprise, like in the original scenario posed in this post. If the enterprise is using Office telemetry and pushing the results to a SQL server (*-fingers crossed-*), we can get **tons** of data without even looking at the workstations. Just grab the database!
 
@@ -124,4 +124,4 @@ There's certainly more work to be done in this area. Hopefully simple awareness 
 
 Finally, we are always looking for contributers! The open-source community is the backbone of the digital forensics field. Every new artifact and discovery that is published could be the key to solving an investigation. Pull requests are always welcome!
 
-![Slide 17](MSOT-Slide-17.jpg  "Slide 17")
+![Slide 17](2018-10-19/MSOT-Slide-17.jpg  "Slide 17")
