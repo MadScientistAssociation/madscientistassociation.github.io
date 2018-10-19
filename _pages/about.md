@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-The Mad Scientist Association is a group of DFIR professionals dedicated to research and development to benefit the entire community.
+The Mad Scientist Association is a group of DFIR professionals dedicated to research and development to benefit the entire community. Our projects are based on derived from real-world forensic investigations, keeping us focused on issues relevant to the community.
 
 Our areas of focus include:
 * Investigation of digital artifacts to improve understanding and usefulness in forensic examinations
@@ -18,7 +18,7 @@ All projects and publications are distributed with open-source licenses.
 
 Current Areas of Focus
 ======
-* Microsoft Office telemetry
+* [Microsoft Office telemetry](https://github.com/MadScientistAssociation/madscientistassociation.github.io/blob/master/_posts/2018-10-19/OfficeTelemetry.md)
 * Artifact recovery from pagefile
 
 Contact Us
