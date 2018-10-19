@@ -59,6 +59,8 @@ Entries in the evt.tbl and sln.tbl files are correlated using a 64-bit GUID. A l
 
 If you don't feel like nerding out and reading the docs, we've created a handy Python script that will parse out the entries from the telemetry files and output the results in a CSV.
 
+There is a caveat to the amount of data stored in the telemetry log files. They are only designed to record information for  "recently used files." Well, that's nice and vague, so let's get more specific. Each .tbl file will grow to 5MB before overwriting entries. So "recent" means however long it takes to fill 5MB with log entries.
+
 ![Slide 8](MSOT-Slide-8.jpg  "Slide 8")
 
 There's also an Autopsy module, which finds all groups of telemetry files on a data source, parses them, and outputs the results into the case as artifacts. This makes for great timelines!
@@ -90,3 +92,10 @@ The full list of registry keys and group policy objects can be found in the [doc
 Use Cases 
 ------
 
+My initial idea for using Office telemetry data was to add to a forensic timeline. The telemetry log contains data that is either unavailable elsewhere, or requires a lot more work to reconstruct. Using the telemetry data, it's amazingly easy to show when a user opened Microsoft Word, opened their smoking-gun document, closed the document, and quit the application. Fantastic evidence if you can get it, assuming that the user happens to have telemetry enabled on their system.
+
+![Slide 12](MSOT-Slide-12.jpg  "Slide 12")
+
+Even better than the single-user use case, let's say we are tasked with forensic examination of machines across an enterprise, like in the original scenario posed in this post. If the enterprise is using Office telemetry and pushing the results to a SQL server (*-fingers crossed-*), we can get **tons** of data without even looking at the workstations. Just grab the database!
+
+Even even better: the database does not automatically remove entries for computers that don't exist on the network anymore. So as machines are cycled on and off the network, telemetry information will persist. An organization's telemetry database could contain activity for users and computers that haven't been active in years! It is important to note that there is a telemetry database admin tool (tdadm), that can purge old records. So your results may vary based on the frugality of the organization's sysadmin.
