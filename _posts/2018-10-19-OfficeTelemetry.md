@@ -13,7 +13,7 @@ Microsoft Office Telemetry: Tracking Your Every Move
 
 Thanks to everyone for the great feedback from my presentation at [OSDFCon](https://www.osdfcon.org)! I've had a few requests for copies of the slides, and after taking a second look, I realized the slides are quite unhelpful without my yammering narration. Hopefully this post will provide both the slides and the context.
 
-![Slide 1](./2018-10-19/MSOT-Slide-1.jpg  "Slide 1")
+![Slide 1](https://madscientistassociation.github.io/files/2018-10-19/MSOT-Slide-1.jpg  "Slide 1")
 
 
 The Scenario
