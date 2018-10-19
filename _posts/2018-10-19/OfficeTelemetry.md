@@ -64,3 +64,29 @@ If you don't feel like nerding out and reading the docs, we've created a handy P
 There's also an Autopsy module, which finds all groups of telemetry files on a data source, parses them, and outputs the results into the case as artifacts. This makes for great timelines!
 
 ![Slide 9](MSOT-Slide-9.jpg  "Slide 9")
+
+Scaling Up
+------
+
+Earlier we touched on storing telemetry information in a SQL database. Any of the supported versions of Office include the ability to export an installer for **Telemetry Processor**, which collects telemetry logs from a network share and ingests them into MSSQL database. Office includes a handy **Telemetry Dashboard** application, which queries the database and displays reports. Each workstation needs to be configured to push its telemetry logs to the network share where the telemetry processor is monitoring. More on that next.
+
+![Slide 10](MSOT-Slide-10.jpg  "Slide 10")
+
+Telemetry agent can be installed on workstations in 3 ways:
+
+1. Open the **Telemetry Log** application from Window and click the install button
+2. Manually set the proper registry keys
+3. Group policy
+
+Running the installer directly from the telemetry log is the quickest and easiest way to get telemetry running, but registry and group policy objects allow for additional configuration options. For example, to upload collected logs to a network share, two registry keys need to be added or modified:
+
+`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\OSM\enableupload` : enable uploading to a network location
+`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\OSM\commonfileshare` : UNC path of network share
+
+The full list of registry keys and group policy objects can be found in the [documentation for this project](https://github.com/MadScientistAssociation/libmsot/blob/master/Documentation/Microsoft%20Office%20Telemetry%20Log%20(TBL)%20Format.md).
+
+![Slide 11](MSOT-Slide-11.jpg  "Slide 11")
+
+Use Cases 
+------
+
