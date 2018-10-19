@@ -21,6 +21,10 @@ Current Areas of Focus
 * [Microsoft Office telemetry](https://github.com/MadScientistAssociation/madscientistassociation.github.io/blob/master/_posts/2018-10-19/OfficeTelemetry.md)
 * Artifact recovery from pagefile
 
+Newest Posts
+======
+
+
 Contact Us
 ======
 To contribute to our projects, visit [our repositories on Github](https://github.com/MadScientistAssociation).
