@@ -79,10 +79,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "MSA"
+  name             : 
   avatar           : "profile.png"
-  bio              : ""
-  location         : "United States"
+  bio              : 
+  location         : 
   employer         :
   googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            :
@@ -170,13 +170,10 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
+  posts:
     output: true
     permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
